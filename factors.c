@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 
     char *line = NULL;
     size_t len = 0;
-    size_t read;
+    ssize_t read;
 
     while ((read = getline(&line, &len, fp)) != -1) {
         int num = atoi(line);
